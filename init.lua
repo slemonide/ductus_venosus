@@ -1,6 +1,6 @@
 minetest.register_node("ductus_venosus:stone", {
 	description = "Ductus Venosus Stone",
-	tiles = {"default_stone.png^[colorize:red:120"},
+	tiles = {"default_stone.png^[colorize:green:120"},
 	is_ground_content = true,
 	groups = {cracky=3, stone=1, vein=1},
 	drop = 'ductus_venosus:stone',
@@ -38,7 +38,7 @@ local function get_neighbour(pos, prefer_horizontal)
 	local delta_z = math.random(3) - 2
 
 	if prefer_horizontal then
-		if math.random(5) == 1 then
+		if math.random(4) == 1 then
 			delta_y = math.random(3) - 2
 		else
 			delta_y = 0
